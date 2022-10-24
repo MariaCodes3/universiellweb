@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Arial:wght@400;600;800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 68%;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 300;
+
+    font-size: 1.8rem;
+    color: whitesmoke;
+}
+
+h1,
+h2,
+p {
+
+    margin: 2rem 0;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 3.6rem;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    margin: auto;
+}
+
+section {
+    padding: 100px 0;
+}
+
+
+
+header {
+    height:80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6));
+    color: whitesmoke;
+
+}
+
+.logo h1 {
+    font-size: 8rem;
+    color: #FFC20A;
+    margin: 0;
+}
+
+nav {
+    padding: 2% 8%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav box-icon {
+    display: none;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 4rem;
+}
+
+nav ul li a:hover {
+    color: #FFC20A;
+
+
+}
+
+
+.oppset-left,
+.oppset-middle,
+.oppset-right {
+    flex-basis: 30%;
+    padding: 1.8rem;
+}
+
+.btn {
+
+    background-color: #FFC20A;
+    color: #fff;
+    padding: 8px 16px;
+    display: inline-block;
+    margin: 2rem 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+
+
+#eksternelinker .eksternelinker-bottom {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#eksternelinker .eksternelinker-item {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	padding: 30px;
+	margin: 10px 5%;
+	position: relative;
+	
+}
+#eksternelinker .eksternelinker-item::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(60deg, #000000 0%, #000000 100%);
+	opacity: 0.9;
+	z-index: -1;
+
+}
+#eksternelinker .eksternelinker-item h2 {
+	font-size: 2.1rem;
+	color: white;
+	margin-bottom: 10px;
+
+
+}
+
+#eksternelinker .eksternelinker-bottom .eksternelinker-item {
+  flex-basis: 70%;
+  margin: 2.;
+}
+
+
+.header-content{
+    width: 100%;
+    top:16%;
+    left:10;
+    text-align: center;
+    padding:0 6px;
+}

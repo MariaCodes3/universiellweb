@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Arial:wght@400;600;800&display=swap');
+/* Base Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 68%;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 300;
+    /* 1.6*10 = 16px */
+    font-size: 1.8rem;
+    color: whitesmoke;
+}
+
+h1,
+h2,
+p {
+
+    margin: 2rem 0;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 3.6rem;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 2.4rem;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    margin: auto;
+}
+
+section {
+    padding: 100px 0;
+}
+
+
+
+header {
+    height: 10vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6));
+    color: whitesmoke;
+
+}
+
+.logo h1 {
+    font-size: 8rem;
+    color: #FFC20A;
+    margin: 0;
+}
+
+nav {
+    padding: 2% 8%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav box-icon {
+    display: none;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 4rem;
+}
+
+nav ul li a:hover {
+    color: #FFC20A;
+
+
+}
+
+/* oppset Section */
+.oppset-left,
+.oppset-middle,
+.oppset-right {
+    flex-basis: 30%;
+    padding: 1.6rem;
+}
+
+.btn {
+
+    background-color: #FFC20A;
+    color: #fff;
+    padding: 8px 16px;
+    display: inline-block;
+    margin: 2rem 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.oppset2 {
+    background-color: #222;
+    color: whitesmoke;
+}
+
+.oppset2-left {
+    flex-basis: 50%;
+}
+
+.oppset2-right {
+    flex-basis: 30%;
+}
+
+.oppset2 .card {
+    padding: 3rem 8rem;
+    color: #222;
+    background-color: #DCDCDC;
+    margin: 1.6rem;
+    text-align: center;
+}
+
+/* valg Section */
+.valg .row {
+    justify-content: center;
+}
+
+.valg-content {
+    margin-top: 100px;
+}
+
+.progress-bar {
+    width: 80%;
+    height: 2px;
+    background-color: #222;
+    margin: auto;
+    position: relative;
+}
+
+.progress-bar .c1,
+.progress-bar .c2,
+.progress-bar .c3 {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #222;
+    position: absolute;
+}
+
+.progress-bar .c1 {
+    top: -8px;
+    left: 50px;
+}
+
+.progress-bar .c2 {
+    top: -8px;
+    left: 50%;
+}
+
+.progress-bar .c3 {
+    top: -8px;
+    right: 50px;
+}
+
+
+.box1,
+.box2,
+.box3 {
+    padding: 1.8rem;
+}
+
+.valg .box2 {
+    text-align: center;
+}
+
+.valg .box3 {
+    text-align: right;
+}
+
+.valg-content h2 {
+    color: #FFC20A;
+}
+
+/* oppsett3 */
+.oppsett3 {
+    background-color: #222;
+    color: whitesmoke;
+}
+
+.oppsett3 .test {
+    background-color: #505050;
+    padding: 4rem 8rem;
+    margin: 0 1rem;
+}
+
+.oppsett3 .image {
+    height: 80px;
+    width: 80px;
+}
+
+.oppsett3 img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+/* Les mer Seksjon */
+#eksternelinker .eksternelinker {
+	flex-direction: column;
+	text-align: center;
+	max-width: 1500px;
+	margin: 0 auto;
+	padding: 0px 0;
+
+}
+#eksternelinker .eksternelinker-bottom {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	margin-top: 50px;
+}
+#eksternelinker .eksternelinker-item {
+	flex-basis: 80%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	padding: 30px;
+	border-radius: 0px;
+	margin: 10px 5%;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+#eksternelinker .eksternelinker-item::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(60deg, #000000 0%, #000000 100%);
+	opacity: 0.9;
+	z-index: -1;
+
+}
+#eksternelinker .eksternelinker-item h2 {
+	font-size: 2.1rem;
+	color: white;
+	margin-bottom: 10px;
+
+
+}
+/* les mer Section */
+#eksternelinker .eksternelinker-bottom .eksternelinker-item {
+  flex-basis: 45%;
+  margin: 2.5%;
+}
+
+
+
